@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer Earl's Portal Page </title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/Spencer Earl Logo.png" alt="logo">
+            <h1>My About Me Page</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html" target="_blank">WWR</a>
+            <a href="#">ICE</a>
+            <a href="#">Project</a>
+        </nav>
+        <main>
+            <div id="content">
+                <h1>About Spencer Earl</h1>
+                <img src="images/AboutMe.png" alt="Spencer Earl Logo" style="width: 300px; height: 300px;">
+                <h2>My Favorites</h2>
+                <table class="greenTable">
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <th>Food</th>
+                            <th>Movie</th>
+                            <th>Muppet</th>
+                            <th>Sport</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blue</td>
+                            <td>Spaghetti</td>
+                            <td>Lilo and Stitch</td>
+                            <td>Kermit</td>
+                            <td>Soccer</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+
+            </div>
+            <section id="ads">Form
+                <form>
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label>
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </fieldset>
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a href="#">Home</a>
+            <a href="#">WWR</a>
+            <a href="#">ICE</a>
+            <a href="#">Project</a>
+
+            Copyright 2025 &copy;
+        </footer>
+    </div>
+</body>
+</html>

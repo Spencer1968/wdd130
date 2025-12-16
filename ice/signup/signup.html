@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+        }
+
+        #formContainer {
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            width: 450px;
+            height: 600px;
+            border: solid 10px rgb(8, 8, 148);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #formContainer h3 {
+            margin: 15px;
+            font-size: 1.35em;
+        }
+
+        header {
+            background-image: url("images/jesus_feeds_5000.jpeg");
+            background-size: cover;
+            height: 180px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-top: 55px;
+            font-size: 2.25em;
+            padding-bottom: 8px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        header h2 {
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        header button {
+            position: relative;
+            left: -208px;
+            margin: 5px;
+        }
+
+        #myForm {
+            text-align: left;
+        }
+
+        label {
+            margin-right: 35px;
+            margin-left: 20px;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+
+        #username {
+            margin-left: auto;
+            position: absolute;
+            /* right: 80px; */
+            width: 190px;
+        }
+
+        #password {
+            margin-left: auto;
+            position: absolute;
+            /* right: 180px; */
+            width: 190px;
+        }
+
+        #email {
+            margin-left: auto;
+            position: absolute;
+            /* right: 180px; */
+            width: 190px;
+        }
+
+        #male {
+            margin-left: 105px;
+            margin-right: 0px;
+        }
+
+        label[for="male"] {
+            padding: 0px;
+            margin-left: 0px;
+            margin-right: 5px;
+        }
+
+        label[for="female"] {
+            padding: 0px;
+            margin-left: 0px;
+        }
+
+        #newsletter {
+            margin-left: 110px;
+            margin-bottom: 15px;
+        }
+
+        label[for="newsletter"] {
+            padding: 0px;
+            margin-left: 0px;
+        }
+
+        #conditions {
+            margin-left: 40px;
+            margin-bottom: 0px;
+        }
+
+        label[for="conditions"] {
+            padding: 0px;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            
+        }
+        button {
+            margin-left: 190px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+        }
+
+        footer {
+            height: 120px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            margin-left: 3px;
+        }
+
+        #oldTestament {
+            height: 115px;
+            grid-column: 1/2;
+            overflow: hidden;
+            margin-top: 16.5px;
+            /* margin-left: 5px; */
+        }
+
+        #newTestament {
+            height: 115px;
+            grid-column: 2/3;
+            overflow: hidden;
+            margin-top: 16.5px;
+            /* margin-left: 5px; */
+        }
+
+        #pearlofgreatPrice {
+            height: 115px;
+            grid-column: 3/4;
+            grid-row: 1/2;
+            overflow: hidden;
+            margin-top: 16.5px;
+            /* margin-left: 5px; */
+        }
+
+        #bookofMormon {
+            height: 115px;
+            grid-column: 4/5;
+            overflow: hidden;
+            margin-top: 16.5px;
+            /* margin-left: 5px; */
+        }
+
+        #doctrineandCovenants {
+            height: 115px;
+            grid-column: 5/6;
+            overflow: hidden;
+            margin-top: 16.5px;
+            /* margin-left: 5px; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="formContainer">
+        <header>
+            <button type="button" id="closeBtn">X</button>
+            <h1>Daily Feed</h1>
+            <h2>Scripture a Day</h2>
+        </header>
+        <h3>Sign Up for Daily Scripture Feed</h3>
+        <form id="myForm">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+        <footer>
+            <img id="oldTestament" src="images/old_testament.webp" alt="old_testament">
+            <img id="newTestament" src="images/new_testament.webp" alt="new_testament">
+            <img id="bookofMormon" src="images/book_of_mormon.webp" alt="book_of_mormon">
+            <img id="doctrineandCovenants" src="images/doctrine_and_covenants.webp" alt="doctrine_and_covenants">
+            <img id="pearlofgreatPrice" src="images/pearl_of_great_price.webp" alt="pearl_of_great_price">
+        </footer>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>
