@@ -249,6 +249,13 @@ section img {
         margin-left: 17px;
     }
 
+    #wrapper-2 {
+        display: block;
+        min-height: 1200px;
+        min-width: 900px;
+        margin-left: 17px;
+    }
+
     header {
         margin-top: -220px;
     }
