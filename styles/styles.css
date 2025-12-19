@@ -54,7 +54,7 @@ nav a:hover {
     max-width: 700px;
     min-height: 800px;
     background: #f5f0e6;
-    /* margin: auto; */
+    margin: 20px auto;
     margin-left: 400px;
     border: black solid 5px;
     border-radius: 20px;
@@ -64,16 +64,16 @@ nav a:hover {
 }
 
 #wrapper-2 {
-    max-width: 700px;
-    min-height: 800px;
+    max-width: 750px;
+    min-height: 1000px;
     background: #f5f0e6;
-    /* margin: auto; */
+    margin: 20px auto;
     margin-left: 400px;
     border: black solid 5px;
     border-radius: 20px;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 178px 50px 2fr 100px;
+    grid-template-rows: auto 50px 1fr auto;
 }
 
 #content {
@@ -175,6 +175,11 @@ main {
     grid-template-columns: 1fr .5fr;
 }
 
+#main-2 {
+    display: block;
+    padding: 20px;
+}
+
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,6 +255,14 @@ section img {
     margin-top: 20px;
 }
 
+#client, #lead, #junior, #general {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: auto; 
+    height: auto;
+}
+
 @media (max-width: 1000px){
     * {
         align-content: center;
@@ -264,9 +277,9 @@ section img {
 
     #wrapper-2 {
         display: block;
-        min-height: 1200px;
-        min-width: 700px;
-        margin-left: 17px;
+        min-height: 2600px;
+        min-width: 95%;
+        margin: 10px auto;
     }
 
     header {
